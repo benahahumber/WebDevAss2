@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.brand {
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+section {
+    padding: 100px 30px;
+    margin-top: 60px;
+}
+
+#home {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#about, #services, #contact {
+    padding: 60px 30px;
+}
