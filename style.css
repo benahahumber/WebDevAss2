@@ -62,3 +62,113 @@ section {
 #about, #services, #contact {
     padding: 60px 30px;
 }
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 0;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-description {
+    margin: 10px 0 0;
+    color: #555;
+}
+
+.text-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+    padding: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.text-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.text-card:hover {
+    transform: translateY(-10px);
+}
+
+.text-card-content {
+    padding: 20px;
+}
+
+.text-card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.text-card-description {
+    margin: 10px 0 0;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .text-card-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .text-card-content {
+        padding: 15px;
+    }
+
+    .text-card-title {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 786px) {
+    main {
+        padding: 135px 50px 50px 50px;
+    }
+
+    .flex {
+        flex-direction: row;
+    }
+
+}
