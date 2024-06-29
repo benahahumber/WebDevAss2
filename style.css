@@ -1,37 +1,58 @@
 body {
     font-family: Arial, sans-serif;
+    /* Sets the font for the body to Arial or a sans-serif alternative */
     margin: 0;
+    /* Removes default margin */
     padding: 0;
+    /* Removes default padding */
 }
 
 .navbar {
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* Sets the background color of the navbar to white */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow to the navbar */
     position: fixed;
+    /* Fixes the navbar at the top of the page */
     width: 100%;
+    /* Ensures the navbar spans the full width of the page */
     top: 0;
+    /* Positions the navbar at the top of the page */
     left: 0;
+    /* Aligns the navbar to the left */
     z-index: 1000;
+    /* Ensures the navbar appears above other content */
 }
 
 .container {
     display: flex;
+    /* Uses flexbox for layout */
     justify-content: space-between;
+    /* Distributes space between items */
     align-items: center;
+    /* Aligns items vertically in the center */
     padding: 15px 30px;
+    /* Adds padding inside the container */
 }
 
 .brand {
     font-size: 1.5em;
+    /* Sets the font size for the brand name */
     color: #333;
+    /* Sets the text color to dark gray */
     text-decoration: none;
+    /* Removes underline from the text */
 }
 
 .nav-links {
     list-style: none;
+    /* Removes bullets from the list */
     display: flex;
+    /* Uses flexbox for layout */
     margin: 0;
+    /* Removes default margin */
     padding: 0;
+    /* Removes default padding */
 }
 
 .nav-links li {
@@ -40,38 +61,58 @@ body {
 
 .nav-links a {
     text-decoration: none;
+    /* Removes underline from the links */
     color: #333;
+    /* Sets the link color to dark gray */
     font-size: 1em;
+    /* Sets the font size for the links */
 }
 
 .nav-links a:hover {
     color: #007BFF;
+    /* Changes link color to blue on hover */
 }
 
 section {
     padding: 100px 30px;
+    /* Adds padding inside sections */
     margin-top: 60px;
+    /* Adds margin at the top of sections */
 }
 
 #home {
     background: #f4f4f4;
+    /* Sets the background color for the home section */
     text-align: center;
+    /* Centers text in the home section */
     padding: 100px 0;
+    /* Adds vertical padding in the home section */
 }
 
-#about, #services, #contact {
+#about,
+#services,
+#contact {
     padding: 60px 30px;
+    /* Adds padding inside the about, services, and contact sections */
 }
 
 .card-container {
     display: grid;
+    /* Uses CSS Grid for layout */
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* Creates responsive columns */
     gap: 0;
+    /* Removes gap between grid items */
     width: 100%;
+    /* Sets the container width to 100% */
     max-width: 1200px;
+    /* Sets a maximum width for the container */
     padding: 20px;
+    /* Adds padding inside the container */
     box-sizing: border-box;
+    /* Includes padding in the element's total width and height */
     justify-content: center;
+    /* Centers the grid content */
 }
 
 .card {
@@ -81,21 +122,26 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
+    /* Stacks children in a column */
     transition: transform 0.3s;
+    /* Adds a transition effect to the transform property */
 }
 
 .card:hover {
     transform: translateY(-10px);
+    /* Moves the card up slightly on hover */
 }
 
 .card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    /* Ensures the image covers the entire area without distortion */
 }
 
 .card-content {
     padding: 20px;
+    /* Adds padding inside the card content */
 }
 
 .card-title {
@@ -110,7 +156,9 @@ section {
 
 .text-card-container {
     display: grid;
+    /* Uses CSS Grid for layout */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Creates responsive columns */
     gap: 20px;
     width: 100%;
     max-width: 1400px;
@@ -120,55 +168,70 @@ section {
 }
 
 .text-card {
-    background: white;
+    background: rgb(228, 228, 228);
+    /* Sets the card background color to light gray */
     border-radius: 10px;
     overflow: hidden;
+    /* Hides overflow content */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
+    /* Uses flexbox for layout */
     flex-direction: column;
+    /* Stacks children in a column */
     transition: transform 0.3s;
+    /* Adds a transition effect to the transform property */
 }
 
 .text-card:hover {
     transform: translateY(-10px);
+    /* Moves the card up slightly on hover */
 }
 
 .text-card-content {
     padding: 20px;
+    /* Adds padding inside the card content */
 }
 
 .text-card-title {
     font-size: 1.5em;
+    /* Sets the font size for the card title */
     margin: 0;
+    /* Removes default margin */
 }
 
 .text-card-description {
     margin: 10px 0 0;
+    /* Adds margin above the description */
     color: #555;
+    /* Sets the text color to a lighter gray */
 }
 
 @media (max-width: 768px) {
     .text-card-container {
         grid-template-columns: 1fr;
+        /* Sets the grid to a single column on small screens */
         padding: 10px;
     }
 
     .text-card-content {
         padding: 15px;
+        /* Reduces padding inside the card content on small screens */
     }
 
     .text-card-title {
         font-size: 1.2em;
+        /* Reduces the font size for the card title on small screens */
     }
 }
 
 @media screen and (min-width: 786px) {
     main {
         padding: 135px 50px 50px 50px;
+        /* Adds padding inside the main element on medium screens and larger */
     }
 
     .flex {
         flex-direction: row;
+        /* Sets flex direction to row on medium screens and larger */
     }
-
 }
